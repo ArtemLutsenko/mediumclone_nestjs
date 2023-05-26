@@ -1,3 +1,7 @@
+if(!process.env.IS_TS_NODE){
+  require('my_private_module');
+}
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
