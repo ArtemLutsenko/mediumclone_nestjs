@@ -3,6 +3,7 @@
 /node_modules
 
 .env
+src/config.ts
 
 # Logs
 logs

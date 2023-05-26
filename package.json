@@ -26,6 +26,8 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/typeorm": "^9.0.1",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
     "module-alias": "^2.2.2",
     "pg": "^8.11.0",
     "reflect-metadata": "^0.1.13",
