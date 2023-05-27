@@ -31,6 +31,12 @@ export class ArticleController{
     return await this.articleService.findAll(query,currentUserId)
   }
 
+  @Get('feed')
+  @UseGuards(AuthGuard)
+  async getFeed(@User('id') currentUserId: number, @Query() query: any): Promise<ArticlesResponseInterface>{
+    return this.articleService.getFeed(currentUserId, query)
+  }
+
   @Post(':slug/favorite')
   @UseGuards(AuthGuard)
   async addArticlesToFavorites(@User('id') currentUserId: number, @Param('slug') slug: string) : Promise<ArticleResponseInterface>{
